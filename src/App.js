@@ -9,7 +9,7 @@ function App() {
      setTime((prev)=>prev+1);
    },1000);
    return ()=>{
-     clearInterval(interval)
+    clearInterval(interval)
    };
   },[]);
   let [roks,setRoks] = useState([{health:10,id:generateId()},{health:15,id:generateId()}]);
