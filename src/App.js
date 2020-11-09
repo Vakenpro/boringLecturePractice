@@ -27,8 +27,16 @@ function App() {
   }
 
   let degresHp = (targetRok) =>{
-    targetRok.health -=1;
+    let bufRoks = [];
+    for(let element of roks){
+      if(targetRok.id==element.id){
+        element.health-=1;
+      }
+      bufRoks.push(element);
+    }
+    setRoks(roks=>bufRoks);
   }
+  
   return (
   <div class="timer">
     <ul>
