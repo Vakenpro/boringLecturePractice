@@ -15,7 +15,7 @@ function App() {
   let [roks,setRoks] = useState([{health:10,id:generateId()},{health:15,id:generateId()}]);
   let [level, setLevel] = useState(1);
   let addRoks = (rok)=>{
-    setRoks((roks)=>[rok, ...roks]);
+      setRoks((roks)=>[rok, ...roks]);
   };
 
   let deleteRoks = (rokIdToRemove) =>{
