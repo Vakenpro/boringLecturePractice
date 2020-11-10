@@ -12,7 +12,7 @@ code {
     monospace;
 }
 
-.timer{
+/*.timer{
   display: flex;
   margin: auto;
   padding: 10px;
@@ -23,7 +23,7 @@ code {
   background: #7FFFD4;
   justify-content: center;
   align-items:center;
-}
+}*/
 
 input{
   height:50px;
@@ -31,4 +31,8 @@ input{
 }
 li{
   list-style-type: none;
+}
+.images{
+  width:40px;
+  height:40px;
 }

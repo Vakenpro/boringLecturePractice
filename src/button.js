@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import { generateId } from './utilities';
+import {styles} from './styles.js'
 export function Button  (props){
     let deleteElement = () =>{
         props.deleteButton(props.element.id);
@@ -14,14 +15,18 @@ export function Button  (props){
     let rokClick =() =>{
         let target = props.element;
         props.degreHp(target);
-        if(target.health==0){
+        if(target.health<=0){
             deleteElement();
         }
     }
 
     return(
         <li>
-            <button onClick={rokClick}>{props.text}</button>
+            <button style={styles.buttonStyle} onClick={rokClick}>
+                {props.text}
+                
+            </button>
+            
         </li>
     );
 }
