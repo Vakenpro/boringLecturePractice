@@ -3,7 +3,8 @@ let buttonStyles = {
     height:50,
     backgroundImage:'url(stone.png)',
     border: '1px solid black',
-    borderRadius:9
+    borderRadius:9,
+    margin:5
 };
 let divStyles = {
     display: 'flex',
